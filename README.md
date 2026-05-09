@@ -94,7 +94,10 @@ The **Options** page lets you configure theming and UI performance.
 
 ## :sparkling_heart: Support
 
-- :white_check_mark: Pottasium
-- :white_check_mark: Madium
-- :white_check_mark: Xeno
-- :white_check_mark: Velocity
+- :performance.
+
+ - [x] Pottasium
+ - [x] Madium
+ - [x] Xeno
+ - [x] Velocity
+  

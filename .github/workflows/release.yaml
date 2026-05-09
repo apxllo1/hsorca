@@ -7,7 +7,8 @@ on:
 
 jobs:
   bundle-release:
-    runs-on: ubuntu-22.04
+    # change this from ubuntu-22.04 to ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
@@ -15,6 +16,11 @@ jobs:
         with:
           repository: ${{ github.event.repository.full_name }}
           ref: master
+
+      # add this step before the setup-foreman step
+      - name: Clean foreman install
+        run: |
+          rm -rf .foreman-install
 
       - name: Install Foreman
         uses: rojo-rbx/setup-foreman@v1
